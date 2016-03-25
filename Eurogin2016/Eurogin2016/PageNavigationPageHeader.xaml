@@ -12,7 +12,6 @@
             <RowDefinition Height="Auto"/>
             <RowDefinition/>
         </Grid.RowDefinitions>
-
         <Grid
             Grid.Row="0"
             Background="White"
@@ -20,238 +19,54 @@
             <RelativePanel Height="50">
                 <Grid>
                     <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="Auto"/>
-                        <ColumnDefinition Width="Auto"/>
-                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="50"/>
+                        <ColumnDefinition Width="260"/>
+                        <ColumnDefinition Width="50"/>
                     </Grid.ColumnDefinitions>
                     <Button
-                        HorizontalAlignment="Stretch"
-                        VerticalAlignment="Stretch"
+                        x:Name="btnBack"
+                        Click="btnBack_Click"
+                        Height="50"
+                        Width="50"
                         Grid.Column="0"
-                        Content="Back"
-                        FontSize="12">
-
+                        FontSize="12"
+                        Margin="0" RenderTransformOrigin="0.5,0.5">
+                        <Button.RenderTransform>
+                            <CompositeTransform Rotation="180"/>
+                        </Button.RenderTransform>
+                        <Button.Background>
+                            <ImageBrush Stretch="Fill" ImageSource="Assets/left_arrow.png"/>
+                        </Button.Background>
                     </Button>
-                    <Image
-                        HorizontalAlignment="Left"
+                    <Grid
+                        HorizontalAlignment="Center"
                         VerticalAlignment="Center"
                         Grid.Column="1"
-                        Width="260"                        
-                        Source="Assets/header_logo.png"/>
+                        Width="260"
+                        >
+                        <TextBlock
+                            x:Name="txtPageTitle"
+                            HorizontalAlignment="Center"
+                            Text="Page Title" />
+                    </Grid>
                     <Button
-                        HorizontalAlignment="Stretch"
-                        VerticalAlignment="Stretch"
+                        x:Name="btnNavigationPage"
+                        Click="btnNavigationPage_Click"
+                        Height="50"
+                        Width="50"
                         Grid.Column="2"
                         FontSize="12"
-                        Content="Search">
+                        Margin="0">
+                        <Button.Background>
+                            <ImageBrush Stretch="Fill" ImageSource="Assets/ic_search.png"/>
+                        </Button.Background>
                     </Button>
                 </Grid>
             </RelativePanel>
-        </Grid>
-
-        <Grid Grid.Row="1">
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition/>
-                <ColumnDefinition/>
-            </Grid.ColumnDefinitions>
-            <Grid.RowDefinitions>
-                <RowDefinition Height="Auto"/>
-                <RowDefinition Height="*"/>
-                <RowDefinition Height="*"/>
-                <RowDefinition Height="*"/>
-            </Grid.RowDefinitions>
-            <!--Banner Image-->
-
-            <Image
-                Grid.Row="0"
-                Grid.ColumnSpan="2"
-                VerticalAlignment="Stretch"
-                HorizontalAlignment="Stretch"                
-                Source="Assets/banner_2016.png"/>
-
-            <!--My Visits-->
-            <Grid
-                HorizontalAlignment="Stretch"
-                VerticalAlignment="Stretch"
-                Grid.Column="0"
+            <Frame
+                Background="Transparent"
                 Grid.Row="1"
-                Height="Auto"
-                Width="Auto"
-                Margin="10"
-                Background="LightGray">
-                <Button            
-                    HorizontalAlignment="Stretch"
-                    VerticalAlignment="Stretch"
-                    Grid.Column="0"
-                    Grid.Row="1"
-                    Margin="0"
-                    Width="Auto"
-                    Height="Auto">
-                    <Image
-                        Width="100"
-                        Height="100"
-                        Source="Assets/ic_my_visits_new.png"/>
-                </Button>
-                <TextBlock
-                    Foreground="White"
-                    HorizontalAlignment="Center"
-                    VerticalAlignment="Bottom"
-                    Margin="10"
-                    Text="My Visits"/>
-            </Grid>
-            
-            <!--Programs-->
-            <Grid
-                HorizontalAlignment="Stretch"
-                VerticalAlignment="Stretch"
-                Grid.Column="1"
-                Grid.Row="1"
-                Height="Auto"
-                Width="Auto"
-                Margin="10"
-                Background="LightGray">
-                <Button            
-                    HorizontalAlignment="Stretch"
-                    VerticalAlignment="Stretch"
-                    Grid.Column="1"
-                    Grid.Row="1"
-                    Margin="0"
-                    Width="Auto"
-                    Height="Auto">
-                    <Image
-                        Width="100"
-                        Height="100"
-                        Source="Assets/ic_program.png"/>
-                </Button>
-                <TextBlock
-                    Foreground="White"
-                    HorizontalAlignment="Center"
-                    VerticalAlignment="Bottom"
-                    Margin="10"
-                    Text="Programs"/>
-            </Grid>
-            
-            <!--Exhibition Floor Plan-->
-            <Grid
-                HorizontalAlignment="Stretch"
-                VerticalAlignment="Stretch"
-                Grid.Column="0"
-                Grid.Row="2"
-                Height="Auto"
-                Width="Auto"
-                Margin="10"
-                Background="LightGray">
-                <Button            
-                    HorizontalAlignment="Stretch"
-                    VerticalAlignment="Stretch"
-                    Grid.Column="0"
-                    Grid.Row="2"
-                    Margin="0"
-                    Width="Auto"
-                    Height="Auto">
-                    <Image
-                        Width="100"
-                        Height="100"
-                        Source="Assets/ic_exhibitor_floor.png"/>
-                </Button>
-                <TextBlock
-                    Foreground="White"
-                    HorizontalAlignment="Center"
-                    VerticalAlignment="Bottom"
-                    Margin="10"
-                    Text="Exhibition Floor Plan"/>
-            </Grid>            
-            <!--Faculty-->
-            <Grid
-                HorizontalAlignment="Stretch"
-                VerticalAlignment="Stretch"
-                Grid.Column="1"
-                Grid.Row="2"
-                Height="Auto"
-                Width="Auto"
-                Margin="10"
-                Background="LightGray">
-                <Button            
-                    HorizontalAlignment="Stretch"
-                    VerticalAlignment="Stretch"
-                    Grid.Column="1"
-                    Grid.Row="2"
-                    Margin="0"
-                    Width="Auto"
-                    Height="Auto">
-                    <Image
-                        Width="100"
-                        Height="100"
-                        Source="Assets/ic_faculty.png"/>
-                </Button>
-                <TextBlock
-                    Foreground="White"
-                    HorizontalAlignment="Center"
-                    VerticalAlignment="Bottom"
-                    Margin="10"
-                    Text="Faculty"/>
-            </Grid>
-            <!--Sponsors-->
-            <Grid
-                HorizontalAlignment="Stretch"
-                VerticalAlignment="Stretch"
-                Grid.Column="0"
-                Grid.Row="3"
-                Height="Auto"
-                Width="Auto"
-                Margin="10"
-                Background="LightGray">
-                <Button            
-                    HorizontalAlignment="Stretch"
-                    VerticalAlignment="Stretch"
-                    Grid.Column="0"                    
-                    Grid.Row="3"
-                    Margin="0"
-                    Width="Auto"
-                    Height="Auto">
-                    <Image
-                        Width="100"
-                        Height="100"
-                        Source="Assets/ic_exhibitors.png"/>
-                </Button>
-                <TextBlock
-                    Foreground="White"
-                    HorizontalAlignment="Center"
-                    VerticalAlignment="Bottom"
-                    Margin="10"
-                    Text="Sponors"/>
-            </Grid>
-            
-            <!--Practical Information-->
-            <Grid
-                HorizontalAlignment="Stretch"
-                VerticalAlignment="Stretch"
-                Grid.Column="1"
-                Grid.Row="3"
-                Height="Auto"
-                Width="Auto"
-                Margin="10"
-                Background="LightGray">
-                <Button            
-                    HorizontalAlignment="Stretch"
-                    VerticalAlignment="Stretch"
-                    Grid.Column="1"                    
-                    Grid.Row="3"
-                    Margin="0"
-                    Width="Auto"
-                    Height="Auto">
-                    <Image
-                        Width="100"
-                        Height="100"
-                        Source="Assets/ic_information.png"/>
-                </Button>
-                <TextBlock
-                    Foreground="White"
-                    HorizontalAlignment="Center"
-                    VerticalAlignment="Bottom"
-                    Margin="10"
-                    Text="Practical Information"/>
-            </Grid>            
+                x:Name="framePageContent"/>
         </Grid>
     </Grid>
 </Page>
