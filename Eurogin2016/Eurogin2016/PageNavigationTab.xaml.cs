@@ -26,5 +26,10 @@ namespace Eurogin2016
         {
             this.InitializeComponent();
         }
+
+        private void btnFind_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
