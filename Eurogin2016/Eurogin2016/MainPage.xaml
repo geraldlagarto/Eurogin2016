@@ -21,34 +21,18 @@
                 <Grid>
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="Auto"/>
-                        <ColumnDefinition Width="Auto"/>
-                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="50"/>
                     </Grid.ColumnDefinitions>
-                    <Button
-                        BorderBrush="Transparent"
-                        Grid.Column="0"
-                        Width="50"
-                        Height="50"
-                        FontSize="12">
-                        <Button.Background>
-                            <ImageBrush Stretch="Fill" ImageSource="Assets/left_arrow.png">
-                                <ImageBrush.RelativeTransform>
-                                    <CompositeTransform CenterY="0.5" CenterX="0.5" Rotation="180"/>
-                                </ImageBrush.RelativeTransform>
-                            </ImageBrush>
-                        </Button.Background>
-
-                    </Button>
                     <Image
                         HorizontalAlignment="Left"
                         VerticalAlignment="Center"
-                        Grid.Column="1"
-                        Width="260"                        
+                        Grid.Column="0"
+                        Width="310"
                         Source="Assets/header_logo.png"/>
                     <Button
                         Height="50"
                         Width="50"
-                        Grid.Column="2"
+                        Grid.Column="1"
                         FontSize="12"
                         Margin="0">
                         <Button.Background>
