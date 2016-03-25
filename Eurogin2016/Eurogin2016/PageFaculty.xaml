@@ -1,5 +1,5 @@
 ﻿<Page
-    x:Class="Eurogin2016.MainPage"
+    x:Class="Eurogin2016.PageFaculty"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:local="using:Eurogin2016"
@@ -10,5 +10,4 @@
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     </Grid>
-    
 </Page>
