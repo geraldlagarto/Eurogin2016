@@ -8,6 +8,261 @@
     mc:Ignorable="d">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+        <Grid
+            Grid.Row="0"
+            Background="White"
+            >
+            <RelativePanel Height="50">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="Auto"/>
+                    </Grid.ColumnDefinitions>
+                    <Button
+                        BorderBrush="Transparent"
+                        Grid.Column="0"
+                        Width="50"
+                        Height="50"
+                        FontSize="12">
+                        <Button.Background>
+                            <ImageBrush Stretch="Fill" ImageSource="Assets/left_arrow.png">
+                                <ImageBrush.RelativeTransform>
+                                    <CompositeTransform CenterY="0.5" CenterX="0.5" Rotation="180"/>
+                                </ImageBrush.RelativeTransform>
+                            </ImageBrush>
+                        </Button.Background>
+
+                    </Button>
+                    <Image
+                        HorizontalAlignment="Left"
+                        VerticalAlignment="Center"
+                        Grid.Column="1"
+                        Width="260"                        
+                        Source="Assets/header_logo.png"/>
+                    <Button
+                        Height="50"
+                        Width="50"
+                        Grid.Column="2"
+                        FontSize="12"
+                        Margin="0">
+                        <Button.Background>
+                            <ImageBrush Stretch="Fill" ImageSource="Assets/ic_search.png"/>
+                        </Button.Background>
+                    </Button>
+                </Grid>
+            </RelativePanel>
+        </Grid>
+
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <!--Banner Image-->
+
+            <Image
+                Grid.Row="0"
+                Grid.ColumnSpan="2"
+                VerticalAlignment="Stretch"
+                HorizontalAlignment="Stretch"                
+                Source="Assets/banner_2016.png"/>
+
+            <!--My Visits-->
+            <Grid
+                HorizontalAlignment="Stretch"
+                VerticalAlignment="Stretch"
+                Grid.Column="0"
+                Grid.Row="1"
+                Height="Auto"
+                Width="Auto"
+                Margin="5"
+                Background="LightGray">
+                <Button            
+                    HorizontalAlignment="Stretch"
+                    VerticalAlignment="Stretch"
+                    Grid.Column="0"
+                    Grid.Row="1"
+                    Margin="0"
+                    Width="Auto"                  
+                    Height="Auto">
+                    <Image
+                        Width="100"
+                        Height="100"
+                        Source="Assets/ic_my_visits_new.png"/>
+                </Button>
+                <TextBlock
+                    Foreground="White"
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Bottom"
+                    Margin="10"
+                    Text="My Visits"/>
+            </Grid>
+
+            <!--Programs-->
+            <Grid
+                HorizontalAlignment="Stretch"
+                VerticalAlignment="Stretch"
+                Grid.Column="1"
+                Grid.Row="1"
+                Height="Auto"
+                Width="Auto"
+                Margin="5"
+                Background="LightGray">
+                <Button            
+                    HorizontalAlignment="Stretch"
+                    VerticalAlignment="Stretch"
+                    Grid.Column="1"
+                    Grid.Row="1"
+                    Margin="0"
+                    Width="Auto"
+                    Height="Auto">
+                    <Image
+                        Width="100"
+                        Height="100"
+                        Source="Assets/ic_program.png"/>
+                </Button>
+                <TextBlock
+                    Foreground="White"
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Bottom"
+                    Margin="10"
+                    Text="Programs"/>
+            </Grid>
+
+            <!--Exhibition Floor Plan-->
+            <Grid
+                HorizontalAlignment="Stretch"
+                VerticalAlignment="Stretch"
+                Grid.Column="0"
+                Grid.Row="2"
+                Height="Auto"
+                Width="Auto"
+                Margin="5"
+                Background="LightGray">
+                <Button            
+                    HorizontalAlignment="Stretch"
+                    VerticalAlignment="Stretch"
+                    Grid.Column="0"
+                    Grid.Row="2"
+                    Margin="0"
+                    Width="Auto"
+                    Height="Auto">
+                    <Image
+                        Width="100"
+                        Height="100"
+                        Source="Assets/ic_exhibitor_floor.png"/>
+                </Button>
+                <TextBlock
+                    Foreground="White"
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Bottom"
+                    Margin="10"
+                    Text="Exhibition Floor Plan"/>
+            </Grid>
+            <!--Faculty-->
+            <Grid
+                HorizontalAlignment="Stretch"
+                VerticalAlignment="Stretch"
+                Grid.Column="1"
+                Grid.Row="2"
+                Height="Auto"
+                Width="Auto"
+                Margin="5"
+                Background="LightGray">
+                <Button            
+                    HorizontalAlignment="Stretch"
+                    VerticalAlignment="Stretch"
+                    Grid.Column="1"
+                    Grid.Row="2"
+                    Margin="0"
+                    Width="Auto"
+                    Height="Auto">
+                    <Image
+                        Width="100"
+                        Height="100"
+                        Source="Assets/ic_faculty.png"/>
+                </Button>
+                <TextBlock
+                    Foreground="White"
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Bottom"
+                    Margin="10"
+                    Text="Faculty"/>
+            </Grid>
+            <!--Sponsors-->
+            <Grid
+                HorizontalAlignment="Stretch"
+                VerticalAlignment="Stretch"
+                Grid.Column="0"
+                Grid.Row="3"
+                Height="Auto"
+                Width="Auto"
+                Margin="5"
+                Background="LightGray">
+                <Button            
+                    HorizontalAlignment="Stretch"
+                    VerticalAlignment="Stretch"
+                    Grid.Column="0"                    
+                    Grid.Row="3"
+                    Margin="0"
+                    Width="Auto"
+                    Height="Auto">
+                    <Image
+                        Width="100"
+                        Height="100"
+                        Source="Assets/ic_exhibitors.png"/>
+                </Button>
+                <TextBlock
+                    Foreground="White"
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Bottom"
+                    Margin="10"
+                    Text="Sponors"/>
+            </Grid>
+
+            <!--Practical Information-->
+            <Grid
+                HorizontalAlignment="Stretch"
+                VerticalAlignment="Stretch"
+                Grid.Column="1"
+                Grid.Row="3"
+                Height="Auto"
+                Width="Auto"
+                Margin="5"
+                Background="LightGray">
+                <Button            
+                    HorizontalAlignment="Stretch"
+                    VerticalAlignment="Stretch"
+                    Grid.Column="1"                    
+                    Grid.Row="3"
+                    Margin="0"
+                    Width="Auto"
+                    Height="Auto">
+                    <Image
+                        Width="100"
+                        Height="100"
+                        Source="Assets/ic_information.png"/>
+                </Button>
+                <TextBlock
+                    Foreground="White"
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Bottom"
+                    Margin="10"
+                    Text="Practical Information"/>
+            </Grid>
+        </Grid>
 
     </Grid>
     

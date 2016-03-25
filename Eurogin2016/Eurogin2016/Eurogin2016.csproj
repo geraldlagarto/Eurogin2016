@@ -101,6 +101,36 @@
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="PageExhibitionFloorPlan.xaml.cs">
+      <DependentUpon>PageExhibitionFloorPlan.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PageFaculty.xaml.cs">
+      <DependentUpon>PageFaculty.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PageFacultyDetails.xaml.cs">
+      <DependentUpon>PageFacultyDetails.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PageMyVisits.xaml.cs">
+      <DependentUpon>PageMyVisits.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PageNavigationPageHeader.xaml.cs">
+      <DependentUpon>PageNavigationPageHeader.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PageNavigationTab.xaml.cs">
+      <DependentUpon>PageNavigationTab.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PagePracticalInformation.xaml.cs">
+      <DependentUpon>PagePracticalInformation.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PageProgramDetails.xaml.cs">
+      <DependentUpon>PageProgramDetails.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PageProgramDetailsAbstract.xaml.cs">
+      <DependentUpon>PageProgramDetailsAbstract.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PagePrograms.xaml.cs">
+      <DependentUpon>PagePrograms.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -110,6 +140,15 @@
     <None Include="Eurogin2016_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Assets\banner_2016.png" />
+    <Content Include="Assets\header_logo.png" />
+    <Content Include="Assets\ic_exhibitors.png" />
+    <Content Include="Assets\ic_exhibitor_floor.png" />
+    <Content Include="Assets\ic_faculty.png" />
+    <Content Include="Assets\ic_information.png" />
+    <Content Include="Assets\ic_my_visits_new.png" />
+    <Content Include="Assets\ic_news.png" />
+    <Content Include="Assets\ic_program.png" />
     <Content Include="Properties\Default.rd.xml" />
     <Content Include="Assets\LockScreenLogo.scale-200.png" />
     <Content Include="Assets\SplashScreen.scale-200.png" />
@@ -127,6 +166,50 @@
     <Page Include="MainPage.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
+    </Page>
+    <Page Include="PageExhibitionFloorPlan.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="PageFaculty.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="PageFacultyDetails.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="PageMyVisits.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="PageNavigationPageHeader.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="PageNavigationTab.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="PagePracticalInformation.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="PageProgramDetails.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="PageProgramDetailsAbstract.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="PagePrograms.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="PageSponsors.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
     </Page>
   </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
